@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Database</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'frontpage.css' %}" />
+    <!-- <%= stylesheet_link_tag "index", 'data-turbolinks-track': "reload" %> -->
+</head>
+<body>
+    <header>
+        <h1>Food Database</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+    <section class="content">
+        <h2>Welcome to Food Database</h2>
+        <p>This is a place where you can find information</br> about various foods in refrigerator.</p>
+        <a>Get Started</a>
+        <!-- <%= link_to 'Get started', controller: 'foods' %> -->
+    </section>
+    <footer>
+        <p>&copy; 2024 Food Database. All rights reserved.</p>
+    </footer>
+</body>
+</html>

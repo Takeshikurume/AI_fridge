@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Database</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'foodpage.css' %}" />
+    <!-- <%= stylesheet_link_tag "index", 'data-turbolinks-track': "reload" %> -->
+</head>
+<body>
+    <header>
+        <h1>Food Database</h1>
+    </header>
+    <h1 class="list">食べ物一覧</h1>
+    <div class="container">
+        <table>
+            <thead>
+                <tr>
+                    <th>食品</th>
+                    <th>個数</th>
+                    <th>賞味期限</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for post in posts %}
+                <tr>
+                    <td>{{post.name}}</td>
+                    <td>{{post.num}}</td>
+                    <td>{{post.date}}</td>
+                </tr>
+                {% endfor %}
+                <!-- Add more rows as needed -->
+            </tbody>
+        </table>
+    </div>
+</body>
+<footer>
+    <p>&copy; 2024 Food Database. All rights reserved.</p>
+</footer>
+</html>
