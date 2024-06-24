@@ -16,10 +16,11 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from food.views import frontpage, foodpage
+from food.views import frontpage, foodpage ,capturepage
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path("", frontpage), 
-    path("foods/", foodpage)
+    path("foods/", foodpage),
+    path("capture/", capturepage),
 ]
