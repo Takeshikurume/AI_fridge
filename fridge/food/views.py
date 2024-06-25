@@ -1,10 +1,3 @@
-from django.shortcuts import render
-from .models import Post
-
-# Create your views here.
-def frontpage(request):
-    return render(request, "food/frontpage.html")
-
-def foodpage(request):
-    posts = Post.objects.all()
-    return render(request, "food/foodpage.html", {"posts": posts})
+version https://git-lfs.github.com/spec/v1
+oid sha256:6d2086a6af10da03592ffc492335bdf39d3352cba58857d76ae159d4907ee0e2
+size 283
