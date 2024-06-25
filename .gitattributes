@@ -1,4 +1,7 @@
 keras-yolo3-master filter=lfs diff=lfs merge=lfs -text
+fridge filter=lfs diff=lfs merge=lfs -text
+fridgegit filter=lfs diff=lfs merge=lfs -text
+add filter=lfs diff=lfs merge=lfs -text
 *.py filter=lfs diff=lfs merge=lfs -text
 *.sqlite3 filter=lfs diff=lfs merge=lfs -text
 *.pyc filter=lfs diff=lfs merge=lfs -text
